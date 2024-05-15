@@ -1,0 +1,252 @@
+.flights-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    gap: 20px; /* Space between cards */
+    background-color: #eef1f5; /* Light background for the overall container */
+  }
+  
+  .flight-card-container {
+    width: 75%;
+  }
+  
+
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .flight-info > div {
+    font-size: 16px;
+    /* Maintain white color for text to ensure readability */
+  }
+  
+  .card-content {
+    padding-top: 10px;
+    /* Adjust the content color if needed, or keep white for consistency */
+  }
+  
+  .on-time {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .delayed {
+    background-color: #f44336;
+    color: #ffffff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .rating mat-icon {
+    color: #ffeb3b; /* Gold color for a star rating */
+  }
+  
+  /* Additional Styling for Icons and Other Elements */
+  mat-icon {
+    color: inherit; /* Icons inherit color from parent for consistency */
+  }
+  
+  /* Style adjustments for specific elements can be added here */
+  .search-filter-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .flights-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  
+  
+  .container {
+    display: flex;
+    flex-direction: row; /* Align children horizontally */
+  }
+  
+  .filter-section {
+    flex: 1; /* Take up 1 part of the container */
+    padding-right: 20px; /* Add some spacing between filter and list */
+  }
+  
+  .list-section {
+    flex: 3; /* Take up 3 parts of the container, making it larger than the filter section */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between cards */
+  }
+  
+ 
+  .app-container {
+    display: flex;
+    height: 100vh; /* Adjust the height as per your requirement */
+  }
+  
+  .filter-section, .temporary-empty-section {
+    flex: 0 1 200px; /* This sets the basis for each side section to 200px but allows them to shrink if necessary */
+    padding: 20px; /* Add padding for some spacing around the content */
+  }
+  
+  .flight-list-section {
+    flex: 1; /* This allows the flight list section to grow and take up remaining space */
+    padding: 20px; /* Add padding for some spacing around the content */
+  }
+  
+  /* Custom styling for each section */
+  .filter-section {
+    /* You might want to add specific styles for the filter section here */
+  }
+  
+  .flight-list-section {
+    /* Styles for the flight list section */
+  }
+  
+  .temporary-empty-section {
+    /* Styles for the temporary empty section, if needed */
+  }
+  
+  /* Ensure the mat-form-field within the filter-section takes the full width */
+  .filter-section mat-form-field {
+    width: 100%;
+  }
+  .flight-card {
+    width: 100%;
+   
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-section, .middle-section, .right-section {
+    flex-basis: 33.33%; /* Phân chia không gian một cách đồng đều */
+    height: 150px; /* Độ cao của mỗi phần */
+  }
+  
+  .left-section, .right-section {
+    background-color: #5bc0de;
+    display: flex; /* Sử dụng flexbox */
+    flex-direction: column; /* Hiển thị các phần tử theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+   
+  }
+  
+  
+  .middle-section {
+    background-color:  #5bc0de /* Màu cam */
+  }
+  
+  .right-section {
+    background-color: #ff007f; /* Màu hồng */
+  }
+  .plane-icon {
+    font-size: 24px;
+    margin-bottom: 10px; /* Dịch chuyển biểu tượng máy bay xuống phía dưới */
+  }
+  .airport-name {
+    color: #fff; /* Màu chữ trắng */
+    font-size: 20px; /* Kích thước font lớn hơn */
+    font-weight: bold; /* In đậm */
+    text-transform: uppercase; /* Chuyển đổi thành chữ hoa */
+  }
+  .departure-info {
+    text-align: center; /* Căn giữa nội dung trong phần departure-info */
+  }
+  
+  .airport-name, .departure-time {
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  
+  
+  
+  .flight-icon {
+    font-size: 36px;
+    margin-bottom: 5px; /* Thêm một khoảng cách dưới của biểu tượng "flight_arrival" */
+  }
+  
+  .arrival-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .airport-name {
+    margin-bottom: 5px; /* Thêm một khoảng cách dưới của tên sân bay */
+  }
+  
+  
+  
+  .airport-link {
+    text-decoration: none; /* Loại bỏ gạch dưới */
+  }
+  
+  .middle-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .info {
+    margin-bottom: 10px; /* Khoảng cách giữa các phần tử */
+  }
+  
+  .info p {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Font chữ Arial hoặc các font sans-serif khác */
+    color: #333; /* Màu chữ xám đậm */
+  }
+  
+  .book-now {
+    padding: 8px 16px; /* Kích thước nút */
+    background-color: #007bff; /* Màu nền của nút */
+    color: white; /* Màu chữ trắng */
+    border: none; /* Loại bỏ viền */
+    border-radius: 4px; /* Bo tròn góc */
+    cursor: pointer; /* Con trỏ chuột thành bàn tay khi rê chuột vào nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+    font-family: Arial, sans-serif; /* Font chữ Arial hoặc các font sans-serif khác */
+  }
+  
+  .book-now:hover {
+    background-color: #0056b3; /* Màu nền của nút khi rê chuột vào */
+  }
+  
+  .flight-id {
+    font-size: 20px; /* Kích thước font chữ */
+    font-weight: bold; /* Độ đậm của font chữ */
+    margin-bottom: 10px; /* Khoảng cách với các phần tử dưới */
+  }
+  
+  .flight-id-label {
+    color: #333; /* Màu chữ */
+  }
+  
+  .flight-id-value {
+    color: #007bff; /* Màu chữ nổi bật */
+  }
+  
+  
+  
+  
+  
+ 

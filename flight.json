@@ -1,0 +1,49 @@
+{
+  "flights": [
+    {
+      "flightId": 1,
+      "flightNumber": "ABC123",
+      "departure": "Hanoi",
+      "destination": "Ho Chi Minh City",
+      "departureTime": "2024-04-01T08:00:00",
+      "arrivalTime": "2024-04-01T10:00:00",
+      "totalSeats": 150,
+      "price": 100,
+      "id": 10
+    },
+    {
+      "flightId": 2,
+      "flightNumber": "XYZ456",
+      "departure": "Ho Chi Minh City",
+      "destination": "Da Nang",
+      "departureTime": "2024-04-02T09:00:00",
+      "arrivalTime": "2024-04-02T10:30:00",
+      "totalSeats": 100,
+      "price": 120,
+      "id": 20
+    },
+    {
+      "flightId": 3,
+      "flightNumber": "DEF789",
+      "departure": "Da Nang",
+      "destination": "Hanoi",
+      "departureTime": "2024-04-03T11:00:00",
+      "arrivalTime": "2024-04-03T12:30:00",
+      "totalSeats": 120,
+      "price": 90,
+      "id": 30
+    },
+    {
+      "flightId": 4,
+      "flightNumber": "GHI012",
+      "departure": "Hanoi",
+      "destination": "Da Nang",
+      "departureTime": "2024-04-04T13:00:00",
+      "arrivalTime": "2024-04-04T14:30:00",
+      "totalSeats": 130,
+      "price": 110,
+      "id": 40
+    }
+   
+  ]
+}

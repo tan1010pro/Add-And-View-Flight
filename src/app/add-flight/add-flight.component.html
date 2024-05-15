@@ -1,0 +1,62 @@
+<div class="heading">
+    <h1> Create A Flight </h1>
+  </div>
+  <div class="card-container">
+    <mat-card class="card">
+      <div class="card-container">
+        <form
+          class="form-container"
+          [formGroup]="addFlightForm"
+          (ngSubmit)="createFlight()"
+        >
+          <mat-form-field appearance="outline" style="width: 400px">
+            <mat-label>Departure Place</mat-label>
+            <input matInput formControlName="departure" />
+            <mat-error *ngIf="addFlightForm.get('departure')?.errors?.['required']">Departure place is required</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="outline" style="width: 400px">
+            <mat-label>Flight Number</mat-label>
+            <input matInput formControlName="flightNumber"   />
+            <mat-error *ngIf="addFlightForm.get('flightNumber')?.errors?.['required']">FlightNumber place is required</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="outline" style="width: 400px">
+            <mat-label>Destination Place</mat-label>
+            <input matInput formControlName="destination" />
+            <mat-error *ngIf="addFlightForm.get('destination')?.errors?.['required']">Destination place is required</mat-error>
+          </mat-form-field>
+       
+          <mat-form-field>
+            <mat-label>Choose a date for ArrivalTime</mat-label>
+            <input matInput [matDatepicker]="arrivalPicker" formControlName="arrivalTime">
+           
+            <mat-datepicker-toggle matIconSuffix [for]="arrivalPicker"></mat-datepicker-toggle>
+            <mat-datepicker #arrivalPicker></mat-datepicker>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Choose a date for DepartureTime</mat-label>
+            <input matInput [matDatepicker]="departurePicker" formControlName="departureTime">
+           
+            <mat-datepicker-toggle matIconSuffix [for]="departurePicker"></mat-datepicker-toggle>
+            <mat-datepicker #departurePicker></mat-datepicker>
+          </mat-form-field>
+      
+          
+          <mat-form-field appearance="outline" style="width: 400px">
+            <mat-label>Price</mat-label>
+            <input matInput formControlName="price" (input)="onInputChange1($event)" />
+            <mat-error *ngIf="addFlightForm.get('price')?.errors?.['required']">price place is required</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="outline" style="width: 400px">
+            <mat-label>Total Seat</mat-label>
+            <input matInput formControlName="totalSeats" (input)="onInputChange($event)"/>
+            <mat-error *ngIf="addFlightForm.get('totalSeats')?.errors?.['required']">Total Seats place is required</mat-error>
+          </mat-form-field>
+        
+          <button class="add-button" mat-raised-button color="primary" style="margin: 10px 0px">
+            Add
+          </button>
+        </form>
+    
+      </div>
+    </mat-card>
+  </div>>

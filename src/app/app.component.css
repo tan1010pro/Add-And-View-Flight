@@ -1,0 +1,35 @@
+.toolbar {
+    background-color: #2196f3; /* Material blue */
+    color: white;
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12);
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 16px;
+  }
+  
+  .spacer {
+    flex: 1;
+  }
+  
+  .toolbar-button {
+    color: white;
+    margin-left: 24px; /* Increased margin for better spacing */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 20px; /* Increased padding */
+    background-color: #4CAF50; /* Material green */
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .toolbar-button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    cursor: pointer;
+  }
+  
